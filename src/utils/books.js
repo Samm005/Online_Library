@@ -775,7 +775,7 @@ export const booksByCategory = {
       pages: 432,
       language: "English",
       description: "A story of love and second chances.",
-      image: "/images/nf1o0A2k0FEL.jpg",
+      image: "/images/r8.jpg",
       isPopular: false,
     },
     {
