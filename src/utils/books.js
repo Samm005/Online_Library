@@ -337,7 +337,7 @@ export const booksByCategory = {
       pages: 271,
       language: "English",
       description: "A cyberpunk classic.",
-      image: "/images/sf5L.jpg",
+      image: "/images/sf5.jpg",
       isPopular: false,
     },
     {
