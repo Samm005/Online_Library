@@ -30,19 +30,11 @@ function Home() {
       <section className="book-card">
         {popularBooks.map((book) => (
           <div key={book.id} className="book">
-            <img
-              src={book.image}
-              alt={book.title}
-              width="200px"
-              height="200px"
-              className="img"
-            />
+            <img src={book.image} alt={book.title} className="img" />
             <p className="popular-text">{book.title}</p>
-            <p className="popular-text">{book.author}</p>
+            <p className="popular-text">Author:{book.author}</p>
             <p className="popular-text">Pages: {book.pages}</p>
-            <p className="popular-text">
-              Year of Publishment: {book.publishedYear}
-            </p>
+            <p className="popular-text">Year : {book.publishedYear}</p>
             <Link to={`/book/${book.id}`} id="view-details">
               View Details
             </Link>

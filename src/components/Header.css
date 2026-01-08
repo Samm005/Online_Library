@@ -1,0 +1,19 @@
+.nav-bar {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  list-style: none;
+  border: 2px solid black;
+  margin: 5px;
+}
+
+.nav-item {
+  font-size: 35px;
+  padding: 10px;
+  color: rgb(0, 255, 0);
+}
+
+.nav-item:hover {
+  color: red;
+  transform: scale(1.1);
+}

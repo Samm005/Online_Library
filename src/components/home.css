@@ -41,7 +41,7 @@
 
 .book-card {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   gap: 20px;
   justify-content: center;
   align-items: center;
@@ -53,14 +53,18 @@
   flex-direction: column;
   margin: 2px 0px;
   border: 2px solid black;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   border-radius: 20px;
+  height: 730px;
+  width: 370px;
 }
 
 .popular-text {
   font-size: 25px;
   padding: 0;
+  color: #07f0ec;
+  font-weight: bold;
 }
 
 #view-details {
@@ -72,10 +76,13 @@
 .img {
   margin-top: 10px;
   border-radius: 10px;
+  width: 160px;
+  height: 220px;
+  object-fit: cover;
 }
 
 .book:hover {
-  transform: scale(1.1);
+  transform: scale(0.9);
 }
 
 #view-details:hover {
