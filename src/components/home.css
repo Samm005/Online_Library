@@ -41,7 +41,7 @@
 
 .book-card {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(5, 370px);
   gap: 20px;
   justify-content: center;
   align-items: center;
