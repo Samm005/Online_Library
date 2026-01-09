@@ -1,10 +1,10 @@
 import { useParams } from "react-router-dom";
-import { booksByCategory } from "../utils/books";
+import { useSelector } from "react-redux";
 import "./BookDetails.css";
 
 function BookDetails() {
   const { id } = useParams();
-  const allBooks = Object.values(booksByCategory).flat();
+  const allBooks = useSelector((state) => state.bookS.books);
   const book = allBooks.find((b) => b.id == id);
 
   if (!book) {

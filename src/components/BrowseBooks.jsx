@@ -1,15 +1,18 @@
 import { useParams, Link } from "react-router-dom";
-import { booksByCategory, categories } from "../utils/books.js";
+import { categories } from "../utils/books.js";
 import { useState } from "react";
+import { useSelector } from "react-redux";
 import "./BrowseBooks.css";
 
 function BrowseBooks() {
   const { category } = useParams();
   const [search, setSearch] = useState("");
 
+  const allBooks = useSelector((state) => state.bookS.books) || [];
+
   const books = category
-    ? booksByCategory[category] || []
-    : Object.values(booksByCategory).flat();
+    ? allBooks.filter((book) => book.category === category)
+    : allBooks;
 
   const searchedBooks = books.filter(
     (book) =>
@@ -43,6 +46,7 @@ function BrowseBooks() {
           value={search}
           onChange={(e) => setSearch(e.target.value)}
           className="search-input"
+          placeholder="Search by title or author"
         />
 
         {search && <button onClick={() => setSearch("")}>❌</button>}
