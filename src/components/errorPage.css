@@ -54,3 +54,19 @@
   margin: 0;
   color: blue;
 }
+
+#home-link {
+  font-size: 35px;
+  padding: 3px;
+  margin-bottom: 7px;
+  color: darkgreen;
+  border: 2px dashed black;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+#home-link:hover {
+  color: red;
+  transform: scale(0.9);
+  border-radius: 10px;
+}
